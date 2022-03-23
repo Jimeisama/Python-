@@ -11,7 +11,6 @@ f2="result.txt"
 import random
 import sys
 import tkinter as tk
-from tkinter import messagebox
 
 class player():    #创建玩家类
     def __init__(self,player_type_n,card=None):
@@ -445,17 +444,3 @@ while bout<5:
     card1.deal()
     printinfo(bout)
 win()
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
