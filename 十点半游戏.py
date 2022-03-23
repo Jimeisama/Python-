@@ -80,7 +80,7 @@ class player():    #创建玩家类
     def countpoint(self):       #计算手牌点数程序，输入的参数c是玩家编号
         self.point=0
         for cd in self.card:
-            if cd[1:] == "J" or cd[1:] =="Q" or cd[1:] =="K":
+            if cd[1:] in ("J", "Q", "K"):
                 self.point+=0.5
             elif cd[1:]=="A":
                 self.point+=1
@@ -445,17 +445,3 @@ while bout<5:
     card1.deal()
     printinfo(bout)
 win()
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
